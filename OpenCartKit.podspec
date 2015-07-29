@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "OpenCartKit"
   s.version          = "0.1.0"
-  s.summary          = "OpenCartKit use to develop iOS app for ecommerce platform OpenCart"
+  s.summary          = "an simplicity iOS SDK OpenCartKit use to develop iOS app for ecommerce platform OpenCart"
   s.description      = <<-DESC
                        OpenCartKit can use to develop iOS app for Opencart platform, this is Objective C version
                        DESC
