@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'GNU General Public License version 3 (GPLv3)'
   s.author           = { "RobinCheung" => "iRobinCheung@hotmail.com" }
-  s.source           = { :git => "https://github.com/iXCarts/OpenCartKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/iXCart/OpenCartKit.git", :tag => s.version.to_s }
  
   s.platform     = :ios, '7.0'
   s.requires_arc = true
