@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs'
+
+xcodeproj 'OpenCartKitTests'
+workspace '../OpenCartKitTests'
+inhibit_all_warnings!
+
+def import_pods
+  pod "OpenCartKit", :path => "../"
+  pod 'AFNetworking',  '~> 2.5.4'
+end
+
+target :ios do
+  platform :ios, '7.0'
+  link_with 'OpenCartKitTests'
+  import_pods
+end
+
+ 

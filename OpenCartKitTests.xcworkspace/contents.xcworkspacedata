@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Defs">
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <FileRef
+         location = "group:OpenCartKit.podspec">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:OpenCartKit"
+      name = "OpenCartKit">
+      <FileRef
+         location = "group:ockit_prefix.pch">
+      </FileRef>
+      <FileRef
+         location = "group:OpenCartKit.h">
+      </FileRef>
+      <Group
+         location = "group:Services"
+         name = "Services">
+         <Group
+            location = "group:Admin"
+            name = "Admin">
+         </Group>
+         <Group
+            location = "group:Catalog"
+            name = "Catalog">
+            <Group
+               location = "group:Account"
+               name = "Account">
+               <FileRef
+                  location = "group:OCAccountService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCAccountService.m">
+               </FileRef>
+               <FileRef
+                  location = "group:OCAddressService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCAddressService.m">
+               </FileRef>
+               <FileRef
+                  location = "group:OCCustomer.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCCustomer.m">
+               </FileRef>
+               <FileRef
+                  location = "group:OCWishListService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCWishListService.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Checkout"
+               name = "Checkout">
+               <FileRef
+                  location = "group:OCCartService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCCartService.m">
+               </FileRef>
+               <FileRef
+                  location = "group:OCCheckoutService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCCheckoutService.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Payment"
+               name = "Payment">
+            </Group>
+            <Group
+               location = "group:Product"
+               name = "Product">
+               <FileRef
+                  location = "group:OCCategoryService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCCategoryService.m">
+               </FileRef>
+               <FileRef
+                  location = "group:OCProductService.h">
+               </FileRef>
+               <FileRef
+                  location = "group:OCProductService.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Setting"
+               name = "Setting">
+            </Group>
+         </Group>
+         <Group
+            location = "group:Core"
+            name = "Core">
+            <FileRef
+               location = "group:OCDataManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:OCDataManager.m">
+            </FileRef>
+            <FileRef
+               location = "group:OCWebService.h">
+            </FileRef>
+            <FileRef
+               location = "group:OCWebService.m">
+            </FileRef>
+            <FileRef
+               location = "group:OCWebServiceConfig.h">
+            </FileRef>
+            <FileRef
+               location = "group:OCWebServiceConfig.m">
+            </FileRef>
+            <FileRef
+               location = "group:OCWebServiceConstant.h">
+            </FileRef>
+            <FileRef
+               location = "group:OCWebServiceConstant.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Excpetion"
+            name = "Excpetion">
+            <FileRef
+               location = "group:OCDataException.h">
+            </FileRef>
+            <FileRef
+               location = "group:OCDataException.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Support"
+         name = "Support">
+         <FileRef
+            location = "group:OCDeviceUtilties.h">
+         </FileRef>
+         <FileRef
+            location = "group:OCDeviceUtilties.m">
+         </FileRef>
+         <FileRef
+            location = "group:OCDictionaryUtilities.h">
+         </FileRef>
+         <FileRef
+            location = "group:OCDictionaryUtilities.m">
+         </FileRef>
+         <FileRef
+            location = "group:RKHTTPUtilities.h">
+         </FileRef>
+         <FileRef
+            location = "group:RKHTTPUtilities.m">
+         </FileRef>
+         <FileRef
+            location = "group:RKSerialization.h">
+         </FileRef>
+         <FileRef
+            location = "group:RKURLEncodedSerialization.h">
+         </FileRef>
+         <FileRef
+            location = "group:RKURLEncodedSerialization.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:Tests/OpenCartKitTests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tests/Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

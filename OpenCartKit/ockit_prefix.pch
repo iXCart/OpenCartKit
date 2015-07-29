@@ -1,0 +1,29 @@
+//
+//  Prefix.pch
+//  OpenCartKit
+//
+//  Created by icoco7 on 6/21/15.
+//  Copyright (c) 2015 icoco. All rights reserved.
+//
+
+#ifndef OpenCartKit_Prefix_pch
+#define OpenCartKit_Prefix_pch
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#ifdef DEBUG
+//#define NSLog(...) NSLog(__VA_ARGS__)
+#define NSLog(format, ...) NSLog(@"file:%s,line:%d,%s:%@",__FILE__, __LINE__, __PRETTY_FUNCTION__,[NSString stringWithFormat:format, ## __VA_ARGS__]);
+
+#else
+#define NSLog(...) {}
+#endif
+
+//#define NSLog(...) {}
+
+#import "Lang.h"
+
+#import "OpenCartKit.h"
+
+#endif
