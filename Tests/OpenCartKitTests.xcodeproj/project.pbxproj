@@ -49,6 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912095A01B69D8D10088F23B /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
 		914287C51B689B1D0052DD26 = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +96,7 @@
 			children = (
 				914287F01B689C4C0052DD26 /* Admin */,
 				914287F11B689C4C0052DD26 /* Catalog */,
-				914287FE1B689C4C0052DD26 /* Excpetion */,
+				912095A01B69D8D10088F23B /* Exception */,
 				914287FF1B689C4C0052DD26 /* Lib */,
 				914288011B689C4C0052DD26 /* OCTestCase.h */,
 				914288021B689C4C0052DD26 /* OCTestCase.m */,
@@ -156,13 +163,6 @@
 			children = (
 			);
 			path = Setting;
-			sourceTree = "<group>";
-		};
-		914287FE1B689C4C0052DD26 /* Excpetion */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Excpetion;
 			sourceTree = "<group>";
 		};
 		914287FF1B689C4C0052DD26 /* Lib */ = {

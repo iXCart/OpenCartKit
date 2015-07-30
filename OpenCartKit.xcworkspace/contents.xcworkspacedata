@@ -131,8 +131,8 @@
             </FileRef>
          </Group>
          <Group
-            location = "group:Excpetion"
-            name = "Excpetion">
+            location = "group:Exception"
+            name = "Exception">
             <FileRef
                location = "group:OCDataException.h">
             </FileRef>
@@ -171,6 +171,81 @@
          <FileRef
             location = "group:RKURLEncodedSerialization.m">
          </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Vendor"
+      name = "Vendor">
+      <Group
+         location = "group:Foundation"
+         name = "Foundation">
+         <FileRef
+            location = "group:AppResource.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppResource.m">
+         </FileRef>
+         <Group
+            location = "group:CKStringUtils"
+            name = "CKStringUtils">
+            <FileRef
+               location = "group:CKStringUtils.h">
+            </FileRef>
+            <FileRef
+               location = "group:CKStringUtils.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Lang.h">
+         </FileRef>
+         <FileRef
+            location = "group:Lang.m">
+         </FileRef>
+         <Group
+            location = "group:NSDictionary+STHelper"
+            name = "NSDictionary+STHelper">
+            <FileRef
+               location = "group:LICENSE.txt">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+OCHelper.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+OCHelper.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+STHelper-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+STHelper.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+STHelper.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSMutableDictionary+STHelper.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSMutableDictionary+STHelper.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Security"
+         name = "Security">
+         <Group
+            location = "group:SSKeychain"
+            name = "SSKeychain">
+            <FileRef
+               location = "group:LICENSE.txt">
+            </FileRef>
+            <FileRef
+               location = "group:SSKeychain.h">
+            </FileRef>
+            <FileRef
+               location = "group:SSKeychain.m">
+            </FileRef>
+         </Group>
       </Group>
    </Group>
    <FileRef

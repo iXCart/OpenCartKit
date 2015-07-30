@@ -7,6 +7,7 @@
 //
 
 #import "OCTestCase.h"
+#import <OpenCartKit/OCWebServiceConfig.h>
 
 @interface OCTestCase ()
 {
@@ -21,6 +22,11 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    BOOL isLocalServer = true;
+    if ( !isLocalServer) {
+        [OCWebServiceConfig sharedInstance].apiRootUrl = @""; // default value define in macro OCWebServiceApiRoot, need set while init
+        [OCWebServiceConfig sharedInstance].version = @""; // default is 2.0+
+     }
     
     //@step setup the test account
     self.email = @"mykit@test.com";

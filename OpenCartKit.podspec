@@ -23,20 +23,63 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'OpenCartKit/**/*','Vendor/**/*'
- 
+#   s.source_files = 'OpenCartKit/**/*','Vendor/**/*'
+#    s.public_header_files = 'OpenCartKit/*.h','OpenCartKit/**/*.h'
 
-  s.public_header_files = 'OpenCartKit/*.h','OpenCartKit/**/*.h'
+    s.dependency 'AFNetworking', '~> 2.5.4'
+   
+    s.public_header_files = 'OpenCartKit/*.h','OpenCartKit/*.pch'
+    s.source_files = 'OpenCartKit/OpenCartKit.h','OpenCartKit/*.pch'
 
-  s.dependency 'AFNetworking', '~> 2.5.4'
-   
-   
-  s.subspec 'Vendor' do |vendor|
-    vendor.ios.deployment_target = '7.0'
- 
-    vendor.ios.public_header_files = 'Vendor/*.h','Vendor/**/*.h','Vendor/**/**/*.h'
-    vendor.ios.source_files = 'Vendor/**/*'
-     
-  end
+    s.subspec 'Services' do |ss|
+#        ss.source_files = 'OpenCartKit/Services/**/*.{h,m}'
+#        ss.ios.public_header_files = 'OpenCartKit/Services/**/*.h'
+        
+        ss.subspec 'Core' do |c|
+            c.ios.public_header_files = 'OpenCartKit/Services/Core/*.h'
+            c.ios.source_files = 'OpenCartKit/Services/Core/*'
+        end
+  		ss.subspec 'Exception' do |c|
+            c.ios.public_header_files = 'OpenCartKit/Services/Exception/*.h'
+            c.ios.source_files = 'OpenCartKit/Services/Exception/*'
+        end
+        ss.subspec 'Product' do |c|
+            c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Product/*.h'
+            c.ios.source_files = 'OpenCartKit/Services/Catalog/Product/*'
+        end
+        ss.subspec 'Account' do |c|
+            c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Account/*.h'
+            c.ios.source_files = 'OpenCartKit/Services/Catalog/Account/*'
+        end
+        ss.subspec 'Checkout' do |c|
+            c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Checkout/*.h'
+            c.ios.source_files = 'OpenCartKit/Services/Catalog/Checkout/*'
+        end
+        ss.subspec 'Payment' do |c|
+            c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Payment/*.h'
+            c.ios.source_files = 'OpenCartKit/Services/Catalog/Payment/*'
+        end
+
+    end
+
+    s.subspec 'Support' do |ss|
+        ss.source_files = 'OpenCartKit/Support/*.{h,m}'
+        ss.ios.public_header_files = 'OpenCartKit/Support/*.h'
+
+    end
+
+    s.subspec 'Vendor' do |v|
+         v.subspec 'Foundation' do |f|
+                f.ios.public_header_files = 'Vendor/Foundation/*.h','Vendor/Foundation/**/*.h'
+                f.ios.source_files = 'Vendor/Foundation/*','Vendor/Foundation/**/*'
+         end
+        v.subspec 'Security' do |s|
+            s.ios.public_header_files = 'Vendor/Security/*.h','Vendor/Security/**/*.h'
+            s.ios.source_files = 'Vendor/Security/**/*'
+        end
+
+#        vendor.ios.public_header_files = 'Vendor/*.h','Vendor/**/*.h','Vendor/**/**/*.h'
+#        vendor.ios.source_files = 'Vendor/**/*'
+    end
   
 end
