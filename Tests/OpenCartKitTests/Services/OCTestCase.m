@@ -21,11 +21,13 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-    BOOL isLocalServer = true;
+    
+    BOOL isLocalServer = false;
     if ( !isLocalServer) {
-        [OCWebServiceConfig sharedInstance].apiRootUrl = @""; // default value define in macro OCWebServiceApiRoot, need set while init
-        [OCWebServiceConfig sharedInstance].version = @""; // default is 2.0+
+        //@step default value define in macro OCWebServiceApiRoot, need set while init
+        [OCWebServiceConfig sharedInstance].apiRootUrl = @"http://opencart.i2cart.com";
+        //@step default is 2.0+
+        //[OCWebServiceConfig sharedInstance].version = @"";
      }
     
     //@step setup the test account

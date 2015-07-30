@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'OpenCartKitDemo'
+inhibit_all_warnings!
+
+
+target 'iApp', :exclusive => true do
+  pod "OpenCartKit", :path => "../"
+  pod 'AFNetworking', '~> 2.5.4'
+end
+
+target 'iAppTests', :exclusive => true do
+  pod "OpenCartKit", :path => "../"
+  pod 'AFNetworking', '~> 2.5.4'	
+  pod 'Specta'
+  pod 'Expecta'
+end

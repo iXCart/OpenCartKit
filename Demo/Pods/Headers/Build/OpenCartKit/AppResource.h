@@ -1,0 +1,1 @@
+../../../../../Vendor/Foundation/AppResource.h

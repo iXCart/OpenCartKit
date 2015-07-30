@@ -35,11 +35,13 @@ PODS:
   - OpenCartKit/Services/Account (0.1.1):
     - AFNetworking (~> 2.5.4)
     - OpenCartKit/Services/Core
+    - OpenCartKit/Services/Exception
     - OpenCartKit/Support
     - OpenCartKit/Vendor
   - OpenCartKit/Services/Checkout (0.1.1):
     - AFNetworking (~> 2.5.4)
     - OpenCartKit/Services/Core
+    - OpenCartKit/Services/Exception
     - OpenCartKit/Support
     - OpenCartKit/Vendor
   - OpenCartKit/Services/Core (0.1.1):
@@ -52,6 +54,7 @@ PODS:
   - OpenCartKit/Services/Product (0.1.1):
     - AFNetworking (~> 2.5.4)
     - OpenCartKit/Services/Core
+    - OpenCartKit/Services/Exception
     - OpenCartKit/Support
     - OpenCartKit/Vendor
   - OpenCartKit/Support (0.1.1):
@@ -76,6 +79,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  OpenCartKit: 89ee18b3157f559f00d96ce515bff1c8659e053e
+  OpenCartKit: a16b3042761d66c2a83ad58a75fcb85eff01e154
 
 COCOAPODS: 0.35.0
