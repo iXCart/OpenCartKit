@@ -47,20 +47,20 @@ Pod::Spec.new do |s|
         ss.subspec 'Product' do |c|
             c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Product/*.h'
             c.ios.source_files = 'OpenCartKit/Services/Catalog/Product/*'
-            c.dependency 'Exception'
-            c.dependency 'Core'
+            c.dependency 'OpenCartKit/Services/Exception'
+            c.dependency 'OpenCartKit/Services/Core'
         end
         ss.subspec 'Account' do |c|
             c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Account/*.h'
             c.ios.source_files = 'OpenCartKit/Services/Catalog/Account/*'
-            c.dependency 'Exception'
-            c.dependency 'Core'
+            c.dependency 'OpenCartKit/Services/Exception'
+            c.dependency 'OpenCartKit/Services/Core'
         end
         ss.subspec 'Checkout' do |c|
             c.ios.public_header_files = 'OpenCartKit/Services/Catalog/Checkout/*.h'
             c.ios.source_files = 'OpenCartKit/Services/Catalog/Checkout/*'
-            c.dependency 'Exception'
-            c.dependency 'Core'
+            c.dependency 'OpenCartKit/Services/Exception'
+            c.dependency 'OpenCartKit/Services/Core'
         end
 
 
