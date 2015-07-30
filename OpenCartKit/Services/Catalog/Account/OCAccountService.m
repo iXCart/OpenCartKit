@@ -9,7 +9,8 @@
 #import "OCAccountService.h"
 #import "OCCustomer.h"
 #import "OCDataException.h"
-#import "OpenCartKit.h"
+#import "CKStringUtils.h"
+#import "NSDictionary+OCHelper.h"
 
 @implementation OCAccountService
 

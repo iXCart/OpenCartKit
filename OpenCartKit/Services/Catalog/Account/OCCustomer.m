@@ -7,7 +7,9 @@
 //
 
 #import "OCCustomer.h"
-#import "OpenCartKit.h"
+#import "CKStringUtils.h"
+#import "NSDictionary+OCHelper.h"
+
 
 @implementation OCCustomer
 @synthesize response = _response;

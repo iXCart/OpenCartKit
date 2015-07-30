@@ -20,40 +20,50 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - OpenCartKit (0.1.0):
+  - OpenCartKit (0.1.1):
     - AFNetworking (~> 2.5.4)
-    - OpenCartKit/Services (= 0.1.0)
-    - OpenCartKit/Support (= 0.1.0)
-    - OpenCartKit/Vendor (= 0.1.0)
-  - OpenCartKit/Services (0.1.0):
+    - OpenCartKit/Services (= 0.1.1)
+    - OpenCartKit/Support (= 0.1.1)
+    - OpenCartKit/Vendor (= 0.1.1)
+  - OpenCartKit/Services (0.1.1):
     - AFNetworking (~> 2.5.4)
-    - OpenCartKit/Services/Account (= 0.1.0)
-    - OpenCartKit/Services/Checkout (= 0.1.0)
-    - OpenCartKit/Services/Core (= 0.1.0)
-    - OpenCartKit/Services/Exception (= 0.1.0)
-    - OpenCartKit/Services/Payment (= 0.1.0)
-    - OpenCartKit/Services/Product (= 0.1.0)
-  - OpenCartKit/Services/Account (0.1.0):
+    - OpenCartKit/Services/Account (= 0.1.1)
+    - OpenCartKit/Services/Checkout (= 0.1.1)
+    - OpenCartKit/Services/Core (= 0.1.1)
+    - OpenCartKit/Services/Exception (= 0.1.1)
+    - OpenCartKit/Services/Product (= 0.1.1)
+  - OpenCartKit/Services/Account (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Services/Checkout (0.1.0):
+    - OpenCartKit/Services/Core
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Services/Checkout (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Services/Core (0.1.0):
+    - OpenCartKit/Services/Core
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Services/Core (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Services/Exception (0.1.0):
+    - OpenCartKit/Services/Exception
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Services/Exception (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Services/Payment (0.1.0):
+  - OpenCartKit/Services/Product (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Services/Product (0.1.0):
+    - OpenCartKit/Services/Core
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Support (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Support (0.1.0):
+    - OpenCartKit/Vendor
+  - OpenCartKit/Vendor (0.1.1):
     - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Vendor (0.1.0):
+    - OpenCartKit/Vendor/Foundation (= 0.1.1)
+    - OpenCartKit/Vendor/Security (= 0.1.1)
+  - OpenCartKit/Vendor/Foundation (0.1.1):
     - AFNetworking (~> 2.5.4)
-    - OpenCartKit/Vendor/Foundation (= 0.1.0)
-    - OpenCartKit/Vendor/Security (= 0.1.0)
-  - OpenCartKit/Vendor/Foundation (0.1.0):
-    - AFNetworking (~> 2.5.4)
-  - OpenCartKit/Vendor/Security (0.1.0):
+  - OpenCartKit/Vendor/Security (0.1.1):
     - AFNetworking (~> 2.5.4)
 
 DEPENDENCIES:
@@ -66,6 +76,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  OpenCartKit: 1218d7c8e9cbc60f9ab6d27a9d1e01a509585dd5
+  OpenCartKit: 89ee18b3157f559f00d96ce515bff1c8659e053e
 
 COCOAPODS: 0.35.0

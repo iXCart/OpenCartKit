@@ -57,10 +57,10 @@
     item = [NSString stringWithFormat:@"batteryLevel: %f\n",device.batteryLevel];
     result = StringJoin(result, item);
     
-    item =  [NSString stringWithFormat:@"batteryState: %ld\n",device.batteryState];
+    item =  [NSString stringWithFormat:@"batteryState: %d\n",(int)device.batteryState];
     result = StringJoin(result, item);
     
-    item =  [NSString stringWithFormat: @"orientation: %ld\n", device.orientation ];
+    item =  [NSString stringWithFormat: @"orientation: %d\n", (int)device.orientation ];
     result = StringJoin(result, item);
     
     item = StringWithFormat (@"*** App Version = %@\n",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]);

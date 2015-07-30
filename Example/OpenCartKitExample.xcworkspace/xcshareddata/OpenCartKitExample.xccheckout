@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3E61C83B-4E28-41EA-8D38-CA6FE2657F7B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OpenCartKitExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>328BEED4D2672B69B6AB3B2E381914E9F75071DF</key>
+		<string>https://github.com/iXCart/OpenCartKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/OpenCartKitExample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>328BEED4D2672B69B6AB3B2E381914E9F75071DF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iXCart/OpenCartKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>328BEED4D2672B69B6AB3B2E381914E9F75071DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>328BEED4D2672B69B6AB3B2E381914E9F75071DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenCartKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
