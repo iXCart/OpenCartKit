@@ -56,6 +56,14 @@
 + (instancetype)forgotten:(NSString *)email;
 
 /*
+ @function: get account info for edit
+ @response:
+ @return: OCAccuontService
+ @ref: http://127.0.0.1/oc2.0.3/index.php?route=account/edit&json=1
+ */
++ (instancetype)getEditInfo;
+
+/*
  @function: edit
  @firstname ;
  @lastname ;

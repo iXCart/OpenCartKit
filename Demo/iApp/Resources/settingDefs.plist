@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>My Account</string>
+		<key>class</key>
+		<string>AcountEditViewController</string>
+		<key>Image</key>
+		<string></string>
+		<key>loginUser</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>My Orders</string>
+		<key>class</key>
+		<string>OrdersViewController</string>
+		<key>Image</key>
+		<string></string>
+		<key>loginUser</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Wish List</string>
+		<key>class</key>
+		<string>WishlistViewController</string>
+		<key>Image</key>
+		<string></string>
+		<key>loginUser</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Store</string>
+		<key>class</key>
+		<string>ServerViewController</string>
+		<key>Image</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>About</string>
+		<key>class</key>
+		<string>AboutViewController</string>
+		<key>Image</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Logout</string>
+		<key>class</key>
+		<string>Logout</string>
+		<key>Image</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

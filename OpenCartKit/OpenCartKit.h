@@ -3,7 +3,7 @@
 //  OpenCartKit
 //
 //  Created by icoco7 on 6/21/15.
-//  Copyright (c) 2015 icoco. All rights reserved.
+//  Copyright (c) 2015 i2Cart.com All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

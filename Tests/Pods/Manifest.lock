@@ -1,0 +1,84 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - OpenCartKit (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Services (= 0.1.1)
+    - OpenCartKit/Support (= 0.1.1)
+    - OpenCartKit/Vendor (= 0.1.1)
+  - OpenCartKit/Services (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Services/Account (= 0.1.1)
+    - OpenCartKit/Services/Checkout (= 0.1.1)
+    - OpenCartKit/Services/Core (= 0.1.1)
+    - OpenCartKit/Services/Exception (= 0.1.1)
+    - OpenCartKit/Services/Product (= 0.1.1)
+  - OpenCartKit/Services/Account (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Services/Core
+    - OpenCartKit/Services/Exception
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Services/Checkout (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Services/Core
+    - OpenCartKit/Services/Exception
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Services/Core (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Services/Exception
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Services/Exception (0.1.1):
+    - AFNetworking (~> 2.5.4)
+  - OpenCartKit/Services/Product (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Services/Core
+    - OpenCartKit/Services/Exception
+    - OpenCartKit/Support
+    - OpenCartKit/Vendor
+  - OpenCartKit/Support (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Vendor
+  - OpenCartKit/Vendor (0.1.1):
+    - AFNetworking (~> 2.5.4)
+    - OpenCartKit/Vendor/Foundation (= 0.1.1)
+    - OpenCartKit/Vendor/Security (= 0.1.1)
+  - OpenCartKit/Vendor/Foundation (0.1.1):
+    - AFNetworking (~> 2.5.4)
+  - OpenCartKit/Vendor/Security (0.1.1):
+    - AFNetworking (~> 2.5.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.4)
+  - OpenCartKit (from `../`)
+
+EXTERNAL SOURCES:
+  OpenCartKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  OpenCartKit: a16b3042761d66c2a83ad58a75fcb85eff01e154
+
+COCOAPODS: 0.35.0

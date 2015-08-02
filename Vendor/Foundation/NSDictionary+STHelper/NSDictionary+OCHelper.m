@@ -3,7 +3,7 @@
 //  icoco
 //
 //  Created by icoco7 on 6/7/15.
-//  Copyright (c) 2015 icoco. All rights reserved.
+//  Copyright (c) 2015 i2Cart.com All rights reserved.
 //
 
 #import "NSDictionary+OCHelper.h"

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethodViewController">
+            <connections>
+                <outlet property="agreeTermView" destination="Zlz-00-bRU" id="UWz-V0-2fS"/>
+                <outlet property="bottomView" destination="p0c-yd-cCu" id="pHB-hH-pca"/>
+                <outlet property="commentContainerView" destination="Ttp-ZJ-2Hj" id="YvC-4u-vGE"/>
+                <outlet property="commentView" destination="jTd-hb-Aoi" id="3xe-iG-N1V"/>
+                <outlet property="tableView" destination="poP-fo-dNQ" id="TeB-KQ-2Ee"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="poP-fo-dNQ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sQO-i1-5XR"/>
+                        <outlet property="delegate" destination="-1" id="swD-3S-JVH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="poP-fo-dNQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8eB-uU-QUb"/>
+                <constraint firstAttribute="centerX" secondItem="poP-fo-dNQ" secondAttribute="centerX" id="TqU-vH-CJP"/>
+                <constraint firstAttribute="centerY" secondItem="poP-fo-dNQ" secondAttribute="centerY" id="dDy-Zi-0ct"/>
+                <constraint firstItem="poP-fo-dNQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j2G-M3-S7Z"/>
+            </constraints>
+            <point key="canvasLocation" x="-248" y="197"/>
+        </view>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="245" id="QA1-Zv-sdc">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QA1-Zv-sdc" id="p0c-yd-cCu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Z-wx-et2">
+                        <rect key="frame" x="44" y="27" width="233" height="30"/>
+                        <state key="normal" title="Add Comments About Your Order">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addComment:" destination="-1" eventType="touchUpInside" id="swq-dv-hEg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qE-bE-OVs">
+                        <rect key="frame" x="15" y="31" width="22" height="22"/>
+                        <connections>
+                            <action selector="addComment:" destination="-1" eventType="touchUpInside" id="dCY-As-GUa"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="139" y="204.5"/>
+        </tableViewCell>
+        <view contentMode="scaleToFill" id="Ttp-ZJ-2Hj">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTd-hb-Aoi">
+                    <rect key="frame" x="2" y="2" width="297" height="128"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jTd-hb-Aoi" secondAttribute="trailing" constant="2" id="835-ND-2yT"/>
+                <constraint firstAttribute="bottom" secondItem="jTd-hb-Aoi" secondAttribute="bottom" constant="2" id="Ri4-bJ-5Rx"/>
+                <constraint firstItem="jTd-hb-Aoi" firstAttribute="leading" secondItem="Ttp-ZJ-2Hj" secondAttribute="leading" constant="2" id="dRa-kC-gYa"/>
+                <constraint firstItem="jTd-hb-Aoi" firstAttribute="top" secondItem="Ttp-ZJ-2Hj" secondAttribute="top" constant="2" id="oXc-Du-ya6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.5" y="-49"/>
+        </view>
+        <view contentMode="scaleToFill" id="Zlz-00-bRU">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I have read and agree to the" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PBD-jd-pvF">
+                    <rect key="frame" x="4" y="10" width="188" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xug-SV-K5F">
+                    <rect key="frame" x="244" y="40" width="51" height="31"/>
+                    <connections>
+                        <action selector="onSwitch:" destination="-1" eventType="valueChanged" id="2VL-KZ-vUk"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCY-WP-keL">
+                    <rect key="frame" x="220" y="86" width="92" height="36"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextStep:" destination="-1" eventType="touchUpInside" id="2eY-cQ-Y9g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-zo-ff6">
+                    <rect key="frame" x="173" y="10" width="148" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title=" Terms &amp; Conditions">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showTerms:" destination="-1" eventType="touchDragOutside" id="hsK-2R-Je6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="462"/>
+        </view>
+    </objects>
+</document>

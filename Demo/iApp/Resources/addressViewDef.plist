@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>firstname</string>
+		<key>title</key>
+		<string>* First Name:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>lastname</string>
+		<key>title</key>
+		<string>* Last Name:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>company</string>
+		<key>title</key>
+		<string>Company:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>address_1</string>
+		<key>title</key>
+		<string>* Address 1:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>address_2</string>
+		<key>title</key>
+		<string>Address 2:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>city</string>
+		<key>title</key>
+		<string>* City:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>postcode</string>
+		<key>title</key>
+		<string>* Post Code:</string>
+		<key>allownull</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>country</string>
+		<key>title</key>
+		<string>* Country:</string>
+		<key>allownull</key>
+		<string></string>
+		<key>type</key>
+		<string></string>
+		<key>class</key>
+		<string>CountryViewController</string>
+		<key>readonly</key>
+		<string>1</string>
+		<key>value</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>zone</string>
+		<key>title</key>
+		<string>* Region / State:</string>
+		<key>allownull</key>
+		<string></string>
+		<key>type</key>
+		<string></string>
+		<key>class</key>
+		<string>CountryViewController</string>
+		<key>readonly</key>
+		<string>1</string>
+		<key>value</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>BLANK</string>
+		<key>title</key>
+		<string>BLANK</string>
+		<key>allownull</key>
+		<string></string>
+		<key>type</key>
+		<string></string>
+		<key>height</key>
+		<integer>215</integer>
+	</dict>
+</array>
+</plist>

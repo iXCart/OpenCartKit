@@ -143,6 +143,24 @@
     return service;
 }
 
+/*
+ @function: get account info for edit
+ @response:
+ @return: OCAccuontService
+ @ref: http://127.0.0.1/oc2.0.3/index.php?route=account/edit&json=1
+ */
++ (instancetype)getEditInfo {
+    
+    OCAccountService* service = [[OCAccountService alloc]init];
+    NSString* route = @"account/edit";
+      service.route = route;
+    
+    NSDictionary* dict = OCNSDictionaryOfParametersBindingsJson(nil);
+    
+    service.parameters = dict;
+    
+    return service;
+}
 
 /*
  @function: edit

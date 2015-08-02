@@ -40,7 +40,7 @@
      NSDictionary* params ;
      NSNumber* value =  20;
      NSString* key = @"YToxOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQxO30";
-     [params setValue:value key];
+     [params setValue:value key:key];
      
  @method=POST
  @response:

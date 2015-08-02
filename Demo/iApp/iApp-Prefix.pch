@@ -1,0 +1,44 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#undef DEBUG
+
+#ifdef DEBUG
+
+#define NSLog(format, ...) NSLog(@"file:%s,line:%d,%s:%@",__FILE__, __LINE__, __PRETTY_FUNCTION__,[NSString stringWithFormat:format, ## __VA_ARGS__]);
+
+#else
+#define NSLog(...) {}
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import <MobileCoreServices/MobileCoreServices.h>
+ 
+    #import "Utils.h"
+    #import "Resource.h"
+    #import "Lang.h"
+    #import "OpenCartConstant.h"
+
+    #import "ICocoKit.h"
+
+    #import "RKMappingResult.h"
+
+    #import "OpenCartKit.h"
+
+#endif
+
+#if defined(DEBUG)
+    #define NSLog(...) {}
+#endif
